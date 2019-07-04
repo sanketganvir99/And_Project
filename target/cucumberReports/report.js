@@ -48,14 +48,14 @@ formatter.match({
   "location": "Steps.i_launch_the_application()"
 });
 formatter.result({
-  "duration": 20351431380,
+  "duration": 21005732688,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_wait_for_page_to_load()"
 });
 formatter.result({
-  "duration": 5003000887,
+  "duration": 5001285119,
   "status": "passed"
 });
 formatter.match({});

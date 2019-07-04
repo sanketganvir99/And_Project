@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Cucumber_Options.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 4, Skipped: 2, Time elapsed: 26.031 sec <<< FAILURE! - in Cucumber_Options.TestRunner
-Then I tap on identifier "ans!@#123"(Scenario: Verify the user is able to login with valid credentials)  Time elapsed: 0.017 sec  <<< ERROR!
+Tests run: 8, Failures: 0, Errors: 4, Skipped: 2, Time elapsed: 27.517 sec <<< FAILURE! - in Cucumber_Options.TestRunner
+Then I tap on identifier "ans!@#123"(Scenario: Verify the user is able to login with valid credentials)  Time elapsed: 0.019 sec  <<< ERROR!
 cucumber.api.PendingException: TODO: implement me
 	at cucumber.runtime.junit.JUnitReporter.addFailure(JUnitReporter.java:150)
 	at cucumber.runtime.junit.JUnitReporter.addFailureOrIgnoreStep(JUnitReporter.java:138)
@@ -39,7 +39,7 @@ cucumber.api.PendingException: TODO: implement me
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-Scenario: Verify the user is able to login with valid credentials  Time elapsed: 0.019 sec  <<< ERROR!
+Scenario: Verify the user is able to login with valid credentials  Time elapsed: 0.02 sec  <<< ERROR!
 cucumber.api.PendingException: TODO: implement me
 	at cucumber.runtime.junit.JUnitReporter.addFailure(JUnitReporter.java:150)
 	at cucumber.runtime.junit.JUnitReporter.addFailureOrIgnoreStep(JUnitReporter.java:138)
@@ -76,7 +76,7 @@ cucumber.api.PendingException: TODO: implement me
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-Then I tap on identifier "ans123!@#"(Scenario: Verify the user is able to login with valid credentials)  Time elapsed: 0.002 sec  <<< ERROR!
+Then I tap on identifier "ans123!@#"(Scenario: Verify the user is able to login with valid credentials)  Time elapsed: 0.004 sec  <<< ERROR!
 cucumber.api.PendingException: TODO: implement me
 	at cucumber.runtime.junit.JUnitReporter.addFailure(JUnitReporter.java:150)
 	at cucumber.runtime.junit.JUnitReporter.addFailureOrIgnoreStep(JUnitReporter.java:138)
@@ -113,7 +113,7 @@ cucumber.api.PendingException: TODO: implement me
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-Scenario: Verify the user is able to login with valid credentials  Time elapsed: 0.004 sec  <<< ERROR!
+Scenario: Verify the user is able to login with valid credentials  Time elapsed: 0.006 sec  <<< ERROR!
 cucumber.api.PendingException: TODO: implement me
 	at cucumber.runtime.junit.JUnitReporter.addFailure(JUnitReporter.java:150)
 	at cucumber.runtime.junit.JUnitReporter.addFailureOrIgnoreStep(JUnitReporter.java:138)
