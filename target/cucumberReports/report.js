@@ -26,76 +26,132 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "I tap on identifier \"ans!@#123\"",
+  "name": "I tap on Identifier \"tv_skip\"",
   "keyword": "Then "
 });
 formatter.step({
   "line": 7,
-  "name": "I Enter \"ajkbd!@322\" in identifier \"absd!@3222\"",
+  "name": "I tap on Identifier \"et_login_email\"",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "I Enter \"ajkbd!@322\" in identifier \"absd!@3222\"",
+  "name": "I Enter \"sc32@loreal.com\" in Identifier \"et_login_email\"",
   "keyword": "Then "
 });
 formatter.step({
   "line": 9,
-  "name": "I tap on identifier \"ans123!@#\"",
+  "name": "I tap on Identifier \"et_login_password\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "I Enter \"Loreal123\" in Identifier \"et_login_password\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "I tap on Identifier \"btn_login\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "Steps.i_launch_the_application()"
 });
 formatter.result({
-  "duration": 21005732688,
+  "duration": 18991521856,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_wait_for_page_to_load()"
 });
 formatter.result({
-  "duration": 5001285119,
+  "duration": 5000461368,
   "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "tv_skip",
+      "offset": 21
+    }
+  ],
+  "location": "Steps.i_tap_on_identifier(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 676475441,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "ajkbd!@322",
+      "val": "et_login_email",
+      "offset": 21
+    }
+  ],
+  "location": "Steps.i_tap_on_identifier(String)"
+});
+formatter.result({
+  "duration": 748126366,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "sc32@loreal.com",
       "offset": 9
     },
     {
-      "val": "absd!@3222",
-      "offset": 36
+      "val": "et_login_email",
+      "offset": 41
     }
   ],
   "location": "Steps.i_enter_something_in_identifier_something(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6972149499,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "ajkbd!@322",
+      "val": "et_login_password",
+      "offset": 21
+    }
+  ],
+  "location": "Steps.i_tap_on_identifier(String)"
+});
+formatter.result({
+  "duration": 691814379,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Loreal123",
       "offset": 9
     },
     {
-      "val": "absd!@3222",
-      "offset": 36
+      "val": "et_login_password",
+      "offset": 35
     }
   ],
   "location": "Steps.i_enter_something_in_identifier_something(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5552004365,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "btn_login",
+      "offset": 21
+    }
+  ],
+  "location": "Steps.i_tap_on_identifier(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 963284511,
+  "status": "passed"
 });
 });

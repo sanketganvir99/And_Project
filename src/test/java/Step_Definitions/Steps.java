@@ -50,18 +50,17 @@ public class Steps {
         
     }
 
-    @Then("^I tap on identifier \"([^\"]*)\"   $")
-    public void i_tap_on_identifier_something(String strArg1) throws Throwable {
-    	
-    	Android_Driver.findElement(By.id(strArg1)).click();
-    	
+    @Then("^I tap on Identifier \"([^\"]*)\"$")
+    public void i_tap_on_identifier(String arg1) throws Throwable {
+        
+    	Android_Driver.findElement(By.id(arg1)).click();
         
     }
 
-    @Then("^I Enter \"([^\"]*)\" in identifier \"([^\"]*)\"$")
+    @Then("^I Enter \"([^\"]*)\" in Identifier \"([^\"]*)\"$")
     public void i_enter_something_in_identifier_something(String strArg1, String strArg2) throws Throwable {
     	
-    	
+    	Android_Driver.findElement(By.id(strArg2)).sendKeys(strArg1);
         
     }
 	
