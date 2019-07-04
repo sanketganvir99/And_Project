@@ -58,14 +58,14 @@ formatter.match({
   "location": "Steps.i_launch_the_application()"
 });
 formatter.result({
-  "duration": 18649898681,
+  "duration": 18012774390,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_wait_for_page_to_load()"
 });
 formatter.result({
-  "duration": 5000415288,
+  "duration": 5005010200,
   "status": "passed"
 });
 formatter.match({
@@ -78,7 +78,7 @@ formatter.match({
   "location": "Steps.i_tap_on_identifier(String)"
 });
 formatter.result({
-  "duration": 792805154,
+  "duration": 766657337,
   "status": "passed"
 });
 formatter.match({
@@ -91,7 +91,7 @@ formatter.match({
   "location": "Steps.i_tap_on_identifier(String)"
 });
 formatter.result({
-  "duration": 793538451,
+  "duration": 730623945,
   "status": "passed"
 });
 formatter.match({
@@ -108,7 +108,7 @@ formatter.match({
   "location": "Steps.i_enter_something_in_identifier_something(String,String)"
 });
 formatter.result({
-  "duration": 8065186647,
+  "duration": 7185190811,
   "status": "passed"
 });
 formatter.match({
@@ -121,7 +121,7 @@ formatter.match({
   "location": "Steps.i_tap_on_identifier(String)"
 });
 formatter.result({
-  "duration": 752552886,
+  "duration": 655023797,
   "status": "passed"
 });
 formatter.match({
@@ -138,7 +138,7 @@ formatter.match({
   "location": "Steps.i_enter_something_in_identifier_something(String,String)"
 });
 formatter.result({
-  "duration": 5651660529,
+  "duration": 6409844841,
   "status": "passed"
 });
 formatter.match({
@@ -151,7 +151,7 @@ formatter.match({
   "location": "Steps.i_tap_on_identifier(String)"
 });
 formatter.result({
-  "duration": 893169584,
+  "duration": 868619774,
   "status": "passed"
 });
 });
