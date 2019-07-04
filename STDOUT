@@ -1,0 +1,11 @@
+Feature: Login
+
+  Scenario: Verify the user is able to login with valid credentials # Login.feature:3
+    Given I launch the application                                  # Steps.i_launch_the_application()
+    Then I wait for page to load                                    # Steps.i_wait_for_page_to_load()
+    Then I tap on Identifier "tv_skip"                              # Steps.i_tap_on_identifier(String)
+    Then I tap on Identifier "et_login_email"                       # Steps.i_tap_on_identifier(String)
+    Then I Enter "sc32@loreal.com" in Identifier "et_login_email"   # Steps.i_enter_something_in_identifier_something(String,String)
+    Then I tap on Identifier "et_login_password"                    # Steps.i_tap_on_identifier(String)
+    Then I Enter "Loreal123" in Identifier "et_login_password"      # Steps.i_enter_something_in_identifier_something(String,String)
+    Then I tap on Identifier "btn_login"                            # Steps.i_tap_on_identifier(String)

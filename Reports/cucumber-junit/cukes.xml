@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="40.599227">
+<testcase classname="Login" name="Verify the user is able to login with valid credentials" time="40.599227">
+<system-out><![CDATA[Given I launch the application..............................................passed
+Then I wait for page to load................................................passed
+Then I tap on Identifier "tv_skip"..........................................passed
+Then I tap on Identifier "et_login_email"...................................passed
+Then I Enter "sc32@loreal.com" in Identifier "et_login_email"...............passed
+Then I tap on Identifier "et_login_password"................................passed
+Then I Enter "Loreal123" in Identifier "et_login_password"..................passed
+Then I tap on Identifier "btn_login"........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
