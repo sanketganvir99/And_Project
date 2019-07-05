@@ -78,7 +78,7 @@ public class Steps {
     		File scrFile = ((TakesScreenshot)Android_Driver).getScreenshotAs(OutputType.FILE);
 
     		try {
-    		FileUtils.copyFile(scrFile, new File("C:/Users/sanke/git/And_Project/Screenshots/image.png"));
+    		FileUtils.copyFile(scrFile, new File("C:/Users/sanke/git/And_Project/Reports/cucumber-extent/image.png"));
     		} catch (IOException e) {
     		// TODO Auto-generated catch block
     		e.printStackTrace();
