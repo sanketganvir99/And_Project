@@ -6,9 +6,13 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.rules.Timeout;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.appium.java_client.android.AndroidDriver;
@@ -65,7 +69,14 @@ public class Steps {
     }
 	
 	
-	
+    @After
+    public void tearDown(Scenario scenario) {
+        if (scenario.isFailed()) {
+          // Take a screenshot...
+          final byte[] screenshot = ((TakesScreenshot) Android_Driver).getScreenshotAs(OutputType.BYTES);
+          scenario.embed(screenshot, "image/png"); // ... and embed it in the report.
+        }
+    }
 	
 	
 	

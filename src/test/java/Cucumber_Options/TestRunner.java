@@ -13,7 +13,8 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/Features", glue = "Step_Definitions", monochrome = true, strict = true, plugin = {
+@CucumberOptions(features = "src/test/java/Features", glue = "Step_Definitions", monochrome = true, strict = true, 
+		plugin = {
 		"pretty:STDOUT", "html:Reports/cucumber-pretty", "json:Reports/cucumber-json/cucumber.json",
 		"junit:Reports/cucumber-junit/cukes.xml",
 		"com.cucumber.listener.ExtentCucumberFormatter:Reports/cucumber-extent/report.html" })
@@ -30,7 +31,9 @@ public class TestRunner {
 		 Reporter.setSystemInfo("Platform version", "7.1.2");
 		 
 		 
-		 
+	}
+
+} 
 		 
 		 
 //		 ExtentCucumberFormatter.initiateExtentCucumberFormatter();
@@ -39,6 +42,4 @@ public class TestRunner {
 //		 ExtentCucumberFormatter.addSystemInfo("Platform Name", "Android");
 //		 ExtentCucumberFormatter.addSystemInfo("Platform Version", "7.1.2");
 //		 ExtentCucumberFormatter.addSystemInfo("Device Name", "Vivo");
-	}
-
-}
+	
