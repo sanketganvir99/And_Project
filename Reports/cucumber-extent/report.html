@@ -38,7 +38,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -51,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 5, 2019 12:24:17 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 5, 2019 04:30:57 PM</span>
 				</a>
 			</li>
 			<li>
@@ -77,6 +78,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -127,10 +129,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>8</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='88.889%'><span class='strong'>8</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='11.111%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -142,10 +144,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>8</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='88.889%'><span class='strong'>8</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='11.111%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -160,33 +162,33 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Login</span>
-						<span class='test-time'>Jul 5, 2019 12:24:17 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Jul 5, 2019 04:30:57 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 5, 2019 12:24:17 AM</span>
-	<span class='label end-time'>Jul 5, 2019 12:24:57 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 39s+682ms</span>
+	<span class='label start-time'>Jul 5, 2019 04:30:57 PM</span>
+	<span class='label end-time'>Jul 5, 2019 04:31:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 48s+422ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1  pass' status='pass' test-id='2'>
+				<li class='node level-1  fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Scenario: Verify the user is able to login with valid credentials</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 12:24:57 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 39s+678ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 04:31:45 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 48s+420ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf pass' status='pass' test-id='3'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Given I launch the application</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 12:24:35 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 18s+16ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 04:31:14 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 17s+451ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -202,7 +204,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>12:24:35 AM</td>
+													<td class='timestamp'>4:31:14 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -213,8 +215,8 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='4'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Then I wait for page to load</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 12:24:40 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 5s+7ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 04:31:19 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 5s+3ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -230,7 +232,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>12:24:40 AM</td>
+													<td class='timestamp'>4:31:19 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -241,8 +243,8 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Then I tap on Identifier "tv_skip"</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 12:24:41 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+768ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 04:31:20 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+699ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -258,7 +260,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>12:24:41 AM</td>
+													<td class='timestamp'>4:31:20 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -269,8 +271,8 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Then I tap on Identifier "et_login_email"</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 12:24:41 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+731ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 04:31:21 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+712ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -286,7 +288,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>12:24:41 AM</td>
+													<td class='timestamp'>4:31:21 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -297,8 +299,8 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Then I Enter "sc32@loreal.com" in Identifier "et_login_email"</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 12:24:49 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 7s+188ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 04:31:28 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 6s+997ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -314,7 +316,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>12:24:49 AM</td>
+													<td class='timestamp'>4:31:28 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -325,8 +327,8 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Then I tap on Identifier "et_login_password"</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 12:24:49 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+656ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 04:31:28 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+712ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -342,7 +344,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>12:24:49 AM</td>
+													<td class='timestamp'>4:31:28 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -353,8 +355,8 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Then I Enter "Loreal123" in Identifier "et_login_password"</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 12:24:56 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 6s+412ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 04:31:34 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 5s+796ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -370,7 +372,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>12:24:56 AM</td>
+													<td class='timestamp'>4:31:34 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -381,8 +383,8 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Then I tap on Identifier "btn_login"</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 12:24:57 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+869ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 04:31:35 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+867ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -398,11 +400,78 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>12:24:57 AM</td>
+													<td class='timestamp'>4:31:35 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf fail' status='fail' test-id='11'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Then I tap on Identifier "btn_login"</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 04:31:45 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+153ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>4:31:45 PM</td>
+													<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'DESKTOP-NV8EM8G', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\sanke\git\And_Proj..., appActivity: com.yml.loreal.features.spl..., appPackage: com.saloncentric.app, appWaitActivity: com.yml.loreal.features.spl..., appWaitPackage: com.saloncentric.app, browserName: , databaseEnabled: false, desired: {app: C:\Users\sanke\git\And_Proj..., appPackage: com.saloncentric.app, browserName: , deviceName: Vivo, fullReset: true, platformName: android, platformVersion: 7.1.2}, deviceManufacturer: vivo, deviceModel: vivo 1611, deviceName: af54d467, deviceScreenSize: 1080x1920, deviceUDID: af54d467, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 7.1.2, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
+Session ID: a6c1c027-0170-4569-b466-a931375efcb9
+*** Element info: {Using=id, value=btn_login}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Step_Definitions.Steps.i_tap_on_identifier(Steps.java:62)
+	at ✽.Then I tap on Identifier "btn_login"(Login.feature:12)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='C:/Users/sanke/git/And_Project/Screenshots/image.png' width='10%' src='C:/Users/sanke/git/And_Project/Screenshots/image.png' data-src='C:/Users/sanke/git/And_Project/Screenshots/image.png'></li>
+										</ul>
 								</div>
 						</div>
 				</li>
@@ -437,6 +506,103 @@
 </div>
 <!-- test view -->
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jul 5, 2019 04:31:35 PM</td>
+                                                        <td class='linked' test-id='11'>Login.Scenario: Verify the user is able to login with valid credentials.Then I tap on Identifier "btn_login"</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'DESKTOP-NV8EM8G', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\sanke\git\And_Proj..., appActivity: com.yml.loreal.features.spl..., appPackage: com.saloncentric.app, appWaitActivity: com.yml.loreal.features.spl..., appWaitPackage: com.saloncentric.app, browserName: , databaseEnabled: false, desired: {app: C:\Users\sanke\git\And_Proj..., appPackage: com.saloncentric.app, browserName: , deviceName: Vivo, fullReset: true, platformName: android, platformVersion: 7.1.2}, deviceManufacturer: vivo, deviceModel: vivo 1611, deviceName: af54d467, deviceScreenSize: 1080x1920, deviceUDID: af54d467, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 7.1.2, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
+Session ID: a6c1c027-0170-4569-b466-a931375efcb9
+*** Element info: {Using=id, value=btn_login}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Step_Definitions.Steps.i_tap_on_identifier(Steps.java:62)
+	at ✽.Then I tap on Identifier "btn_login"(Login.feature:12)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -446,31 +612,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 5, 2019 12:24:17 AM</div>
+					<div class='panel-lead'>Jul 5, 2019 04:30:57 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 5, 2019 12:24:57 AM</div>
+			 		<div class='panel-lead'>Jul 5, 2019 04:31:46 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 39s+865ms</div>
+					<div class='panel-lead'>0h 0m 49s+826ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -504,21 +670,21 @@
 		<script>
 			var statusGroup = {
 				passParent: 8,
-				failParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
 				passChild: 8,
-				failChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

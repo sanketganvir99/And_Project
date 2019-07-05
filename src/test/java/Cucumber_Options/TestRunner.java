@@ -1,6 +1,7 @@
 package Cucumber_Options;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
@@ -22,13 +23,14 @@ import cucumber.api.junit.Cucumber;
 public class TestRunner {
 
 	@AfterClass
-	public static void reportSetup() {
+	public static void reportSetup() throws IOException {
 
 		 Reporter.loadXMLConfig(new
 		 File("src/test/java/android_extent-config.xml"));
 
 		 Reporter.setSystemInfo("Platform name", "Android");
 		 Reporter.setSystemInfo("Platform version", "7.1.2");
+		 Reporter.addScreenCaptureFromPath("C:/Users/sanke/git/And_Project/Screenshots/image.png");
 		 
 		 
 	}

@@ -1,9 +1,11 @@
 package Step_Definitions;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.rules.Timeout;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -71,14 +73,32 @@ public class Steps {
 	
     @After
     public void tearDown(Scenario scenario) {
-        if (scenario.isFailed()) {
-          // Take a screenshot...
-          final byte[] screenshot = ((TakesScreenshot) Android_Driver).getScreenshotAs(OutputType.BYTES);
-          scenario.embed(screenshot, "image/png"); // ... and embed it in the report.
-        }
+    	
+    	if (scenario.isFailed()) {
+    		File scrFile = ((TakesScreenshot)Android_Driver).getScreenshotAs(OutputType.FILE);
+
+    		try {
+    		FileUtils.copyFile(scrFile, new File("C:/Users/sanke/git/And_Project/Screenshots/image.png"));
+    		} catch (IOException e) {
+    		// TODO Auto-generated catch block
+    		e.printStackTrace();
+    		}
+    		
+    	}
+    	
     }
-	
-	
-	
-	
 }
+
+
+
+//        if (scenario.isFailed()) {
+//          // Take a screenshot...
+//          final byte[] screenshot = ((TakesScreenshot) Android_Driver).getScreenshotAs(OutputType.BYTES);
+//          scenario.embed(screenshot, "Screenshots/image/png"); // ... and embed it in the report.
+//        }
+//    }
+	
+	
+	
+	
+
