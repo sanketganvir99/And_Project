@@ -30,7 +30,7 @@ public class TestRunner {
 
 		 Reporter.setSystemInfo("Platform name", "Android");
 		 Reporter.setSystemInfo("Platform version", "7.1.2");
-		 Reporter.addScreenCaptureFromPath("C:/Users/sanke/git/And_Project/Screenshots/image.png");
+		 Reporter.addScreenCaptureFromPath("C:/Users/sanke/git/And_Project/Reports/cucumber-extent/image.png");
 		 
 		 
 	}
